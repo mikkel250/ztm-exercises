@@ -15,27 +15,29 @@ object1.a = 4;
 // create a cow that accepts a name, type and color and has a sound method that moo's her name, type and color. 
 class Animal {
   constructor(name) {
-    name= name
+    this.name = name;
   }
 
 }
 
 class Mammal extends Animal {
-  constructor() {
-    super()
+  constructor(name) {
+    super(name)
   }
 
 }
 
 class Cow extends Mammal {
-  constructor() {
-    super()
+  constructor(name, type, color) {
+    super(name)
+    this.type = type;
+    this.color = color;
   }
 
-  function sound() {
-    return `MOOO! I'm a ${color} cow with name ${name}, type ${type}.`
+  sound() {
+    return `MOOO! I'm a ${this.color} cow with name ${this.name}, type ${this.type}.`
   }
 
 }
 
-const Bessy = new Cow(Bessie, Holstein, brown);
+const Bessie = new Cow('Bessie', 'Holstein', 'brown');
