@@ -1,7 +1,8 @@
 //Solve these problems:
 
 //#1 Create a one line function that adds adds two parameters
-
+const addTwo = (a, b) => a + b;
+addTwo(1, 5);
 // Closures explanation:
 // the child scope always has access to the variables in the parent scope
 // the web browser will remember the reference to a variable inside of a parent function if it's needed later, even if technically that parent function is no longer needed. E.g.
@@ -30,18 +31,18 @@ const newFunc = first();
 //Closure: What does the last line return?
 const addTo = x => y => x + y;
 var addToTen = addTo(10);
-addToTen(3);
+addToTen(3); // 13
 
 //Currying: What does the last line return?
 const sum = (a, b) => a + b;
 const curriedSum = a => b => a + b;
-curriedSum(30)(1);
+curriedSum(30)(1); //31
 
 //Currying: What does the last line return?
 const sum = (a, b) => a + b;
 const curriedSum = a => b => a + b;
 const add5 = curriedSum(5);
-add5(12);
+add5(12); // 17
 
 //Composing: What does the last line return?
 const compose = (f, g) => a => f(g(a));
@@ -53,3 +54,4 @@ compose(
 )(10);
 
 //What are the two elements of a pure function?
+//input and output i.e. the same input will always return same output

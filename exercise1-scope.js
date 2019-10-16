@@ -9,6 +9,8 @@ function q1() {
     alert(a);
 }
 
+// returns 3
+
 //#2
 var a = 0;
 function q2() {
@@ -19,6 +21,7 @@ function q22() {
     alert(a);
 }
 
+// returns 5
 
 //#3
 function q3() {
@@ -30,12 +33,17 @@ function q32() {
     alert(a);
 }
 
+// returns 'hello'   ?
+
 //#4
 var a = 1;
 function q4() {
     var a = "test";
     alert(a);
 }
+
+// returns error var already declared
+// WRONG returns 'test'
 
 //#5
 var a = 2;
@@ -44,3 +52,5 @@ if (true) {
     alert(a);
 }
 alert(a);
+
+// 5 and 5
