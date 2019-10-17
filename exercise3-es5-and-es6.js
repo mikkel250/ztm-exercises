@@ -1,4 +1,4 @@
-// change everything below to the newer Javascript!
+const change everything below to the newer Javascript!
 
 // let + const
 let a = "test";
@@ -22,9 +22,9 @@ var eyeColor = person.eyeColor;
 const { firstName, lastName, age, eyeColor } = person;
 
 // Object properties -- change to consts
-var a = "test";
-var b = true;
-var c = 789;
+const a = "test";
+const b = true;
+const c = 789;
 
 var okObj = {
   a,
@@ -49,11 +49,9 @@ function isValidAge(age = 10) {
 }
 
 // Symbol
-// LOOK THIS ONE UP -- below is wrong
 
 // Create a symbol: "This is my first Symbol"
-let x = new symbol();
-x = "This is my first Symbol";
+
 // CORRECT WAY
 const sym = Symbol("This is my first Symbol");
 

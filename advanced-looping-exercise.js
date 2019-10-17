@@ -1,9 +1,5 @@
 const basket = ["apples", "oranges", "grapes"];
-const detailedBasket = {
-  apples: 5,
-  oranges: 10,
-  grapes: 1000
-};
+
 
 //1
 for (let i = 0; i < basket.length; i++) {
@@ -89,6 +85,13 @@ biggestNumberInArray3(array2);
 biggestNumberInArray3(array3);
 
 // Objects
+const detailedBasket = {
+  apples: 5,
+  oranges: 10,
+  grapes: 1000
+};
+
+
 for (item in detailedBasket) {
   console.log(item);
 }

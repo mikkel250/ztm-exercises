@@ -9,8 +9,24 @@ dragons.includes("John");
 // name or names in an array.
 const dragons = ["Tim", "Johnathan", "Sandy", "Sarah"];
 
-dragons.contains("John");
+const foundJohn = [];
+function findJohn(arr) {
+  arr.forEach(dragon => {
+  if (dragon.includes("John")) {
+    foundJohn.push(dragon);   
+      }  
+    }
+  )
+  return foundJohn;
+}
 
+
+dragons.filter(dragons.forEach(dragon => dragon.includes("John")));
+
+for (let i = 0; i < dragons.length; i++) {
+  dragons[i].includes("John") ? true : 
+    
+}
 
 // #3) Create a function that calulates the power of 100 of a number entered as a parameter
 function powerOf100(num) {
@@ -19,5 +35,5 @@ function powerOf100(num) {
 
 // #4) Useing your function from #3, put in the paramter 10000. What is the result?
 // Research for yourself why you get this result
-Right, this was Infinity
-prob gives this if it's beyond a certain size
+
+//gives this if it's beyond a certain size/too much memory
