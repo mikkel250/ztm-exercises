@@ -10,6 +10,20 @@
 
 // or store the repeats in an obj or separate array and then run filter at the end
 
+// ANOTHER APPROACH
+
+// Loop over
+
+// Store the starting index of multiples, the value of the element, and the number of occurrences in an array (or just 3 variables), incrementing the numOfOccurrences each time there is a match
+
+// Use an if statement to check if it encounters a new value
+
+// the delete operator to remove the multiples once true
+
+// In the same if statement, replace the first element(since it's been saved) with an array containing the value and number of occurrences
+
+// Then use either filter or Symbol to remove the undefined values from the array.
+
 function cleanTheRoom(arr) {
   // add validity check later. for now set the compare val to first element and create a new array to store the slices
   let lastNum = arr[0];
