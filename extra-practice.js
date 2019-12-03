@@ -28,22 +28,36 @@
 //   }
 // }
 
-// ^ tested, works
+// ^ tested, works, but will probably also want to use the Array.fill method to create new arrays of the repeating nums for the final array
 
 function cleanTheRoom(arr) {
   // add validity check later. for now set the compare val to first element and create a new array to store the slices
-  let lastNum = arr[0];
-  let newArr;
+
+  let numberCount = {};
 
   // start at index 1 bc the lastNum is set to 1st element
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] == lastNum) {
-      console.log(`found ${arr[i]}`);
-      newArr = arr.slice(arr[i - 1], arr[i]);
-      console.log(newArr);
+  for (let i = 0; i < arr.length; i++) {
+    if (numberCount[arr[i]] > 0) {
+      numberCount[arr[i]]++;
+    } else if (numberCount[arr[i]] === undefined) {
+      numberCount[arr[i]] = 1;
     }
+    console.log(`numberCount`, numberCount);
+    // console.log(numberCount);
   }
-}
+
+  Object.keys(numberCount).forEach(key => {
+    if (numberCount[property] > 1) {
+      let tempArray = new Array(numberCount[property]); // need to add a second if to deal with 1 bc creates array of 2
+      console.log(`property ${property}\n`);
+      tempArray.fill(property);
+      console.log(tempArray);
+    }
+  })
+
+let testArr = [2, 2, 2, 2, 3, 4, 4, 7, 9, 0, 1, 1, 7];
+// let newA = [[2, 2, 2, 2], 3, [4, 4], 7, 9, 0, [1, 1], 7];
+cleanTheRoom(testArr);
 
 for (item in arr) {
   item => {
