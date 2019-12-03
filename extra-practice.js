@@ -18,11 +18,17 @@
 // then use array methods to create the array with the number of instances of each key
 
 // seems easiest way to do that is to just use a for loop, so in this case it would be to user for..in to iterate over obj, then for loop to push the number in
+
+// let object = { 2: 10, 3: 4, 4: 2, 5: 1, 6: 3 };
+// let finalArr = [];
+
 // for (const property in object) {
-// for(let i = 0; i < object[property]; i++) {
-//   finalArr.push(propterty)
+//   for (let i = 0; i < object[property]; i++) {
+//     finalArr.push(property);
 //   }
 // }
+
+// ^ tested, works
 
 function cleanTheRoom(arr) {
   // add validity check later. for now set the compare val to first element and create a new array to store the slices
